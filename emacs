@@ -47,6 +47,7 @@ package-archives
 
 
 (require 'multiple-cursors)
+(require 'load-theme-buffer-local)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
 (defun my/magit-diff-visit-file-other-window ()
@@ -65,11 +66,12 @@ package-archives
   (interactive)
   (cond
    ((eq major-mode 'term-mode)
-    (load-theme-buffer-local 'purple-terminal (current-buffer))
+    (load-theme-buffer-local 'purple-terminal (current-buffer)))
     (t (ignore-errors (disable-theme 'purple-terminal)))
-   )
-  )
-  )
+    )
+)
+
+(update-local-theme)
 
 (add-hook 'post-command-hook 'update-local-theme)
 
