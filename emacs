@@ -5,7 +5,7 @@
 ;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
-(add-to-list 'load-path "~/.emacs.d/themes")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
