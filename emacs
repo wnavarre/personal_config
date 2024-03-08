@@ -7,6 +7,8 @@
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
+(setenv "EDITOR" "emacsclient -c")
+
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq-default c-basic-offset 4)
