@@ -66,9 +66,10 @@ package-archives
   (interactive)
   (cond
    ((eq major-mode 'term-mode)
-    (load-theme-buffer-local 'purple-terminal (current-buffer)))
-     (ignore-errors (disable-theme 'purple-terminal))
+    (load-theme-buffer-local 'purple-terminal (current-buffer))
+    (t (ignore-errors (disable-theme 'purple-terminal)))
    )
+  )
   )
 
 (add-hook 'post-command-hook 'update-local-theme)
