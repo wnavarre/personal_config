@@ -39,7 +39,7 @@ package-archives
  '(custom-safe-themes
    '("018048f5167697931c1633ecc93ed9050f5e65b3f3383fd65c698d02f0520460" default))
  '(package-selected-packages
-   '(csv-mode rc-mode popup-complete auto-complete-clang cmake-ide ## magit w3 dumb-jump centered-cursor-mode multiple-cursors)))
+   '(csv-mode rc-mode popup-complete auto-complete-clang ## magit dumb-jump multiple-cursors load-theme-buffer-local)))
 (desktop-save-mode 1)
 
 ;(require 'rtags)
