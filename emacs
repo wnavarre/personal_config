@@ -84,5 +84,3 @@ package-archives
   (interactive)
   (message "Use *w3m* to access the web")
   )
-
-(defun 
