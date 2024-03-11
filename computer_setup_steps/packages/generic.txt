@@ -1,0 +1,8 @@
+gedit
+net-tools
+htop
+emacs
+git
+rsync
+moreutils
+
