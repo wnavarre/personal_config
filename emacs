@@ -61,6 +61,10 @@ package-archives
 
 (setq browse-url-browser-function 'w3m-browse-url)
 
+;; Stop at the beginning of a word instead of at the end.
+(require 'misc)
+(global-set-key (kbd "M-f") 'forward-to-word)
+
 (defun update-local-theme ()
   (interactive)
   (cond
