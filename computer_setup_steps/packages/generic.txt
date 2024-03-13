@@ -6,3 +6,4 @@ git
 rsync
 moreutils
 
+ipython3
