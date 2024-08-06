@@ -87,3 +87,12 @@ package-archives
   (interactive)
   (message "Use *w3m* to access the web")
   )
+
+(connection-local-set-profile-variables 'remote-bash
+   '((shell-file-name . "/bin/bash")
+     (shell-command-switch . "-c")))
+
+(connection-local-set-profiles
+   '(:user "navarre")
+   'remote-bash)
+   
